@@ -1,0 +1,3 @@
+rootProject.name = 'ReactNativeHelm'
+
+include ':app'
