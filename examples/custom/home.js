@@ -21,6 +21,7 @@ class Home extends Component {
   };
 
   _push = () => this.props.navigation.push('page', { data: 'pushed from home' });
+  _modal = () => this.props.navigation.modal('page', { data: 'modal from home', hideNavBar: true });
   render() {
     return (
       <View style={{ flex: 1, backgroundColor: 'rgba(0, 0, 0, 0.2)', alignItems: 'center', justifyContent: 'center' }}>
@@ -30,9 +31,9 @@ class Home extends Component {
             <Text style={{ padding: 20 }}>Push Page</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity style={{ marginBottom: 10 }}>
+        <TouchableOpacity style={{ marginBottom: 10 }} onPress={this._modal}>
           <View style={{ backgroundColor: 'rgba(0, 0, 255, 0.6)' }}>
-            <Text style={{ padding: 20 }}>Horizontal Modal</Text>
+            <Text style={{ padding: 20 }}>Modal</Text>
           </View>
         </TouchableOpacity>
       </View>

@@ -8,7 +8,7 @@ import Page from './page';
 const navigation = (
   <Navigation>
     <Scene root key="home" component={Home} />
-    <Scene root key="page" component={Page} hideNavBar />
+    <Scene key="page" component={Page} />
   </Navigation>
 );
 
