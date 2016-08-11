@@ -2,8 +2,22 @@ import React, { Component, PropTypes } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 
 class Home extends Component {
+  static propTypes = {
+    navigation: PropTypes.object,
+  };
+
   static navigationProps = {
     title: 'Home',
+    leftButtons: [(navigation) => (
+      <TouchableOpacity onPress={() => navigation.pop()}>
+        <Text>Pop</Text>
+      </TouchableOpacity>
+    )],
+    rightButtons: [() => (
+      <TouchableOpacity>
+        <Text>Right Button</Text>
+      </TouchableOpacity>
+    )],
   };
 
   _push = () => this.props.navigation.push('page', { data: 'pushed from home' });
@@ -26,4 +40,4 @@ class Home extends Component {
   }
 }
 
-export default Home
+export default Home;

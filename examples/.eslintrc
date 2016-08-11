@@ -14,9 +14,9 @@
     "space-before-keywords": 0,
     "space-after-keywords": 0,
     "space-return-throw-case": 0,
-    "react/sort-comp": [2, { "order": ["lifecycle", "render", "everything-else"]}],
     "max-len": [2, 240, 2],
     "no-alert": 0,
+    "react/jsx-filename-extension": 0,
   },
   "presets": [
     "react-native"

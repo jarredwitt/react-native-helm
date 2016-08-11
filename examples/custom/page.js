@@ -1,16 +1,19 @@
 import React, { Component, PropTypes } from 'react';
 import { Text, View, ScrollView, TouchableOpacity } from 'react-native';
 
-const propTypes = {
-  data: PropTypes.any,
-  parent: PropTypes.string,
-  modal: PropTypes.bool,
-  dispatch: PropTypes.func,
-};
-
 class Page extends Component {
+  static propTypes = {
+    data: PropTypes.string,
+    navigation: PropTypes.object,
+  };
+
   static navigationProps = {
     title: 'Page',
+    leftButtons: [(navigation) => (
+      <TouchableOpacity onPress={() => navigation.pop()}>
+        <Text>Home</Text>
+      </TouchableOpacity>
+    )],
   };
 
   _pop = () => this.props.navigation.pop();
