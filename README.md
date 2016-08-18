@@ -1,5 +1,4 @@
 # react-native-helm
----
 Why did I build this framework? I wanted a React Native navigation framework that worked that the way I expected it to. Anyone is more than welcome to submit pull requests or file issues. Any help or feedback is always appreciated.
 
 Just a note, some concepts barrow heavily from other frameworks like [react-native-navigation](https://github.com/wix/react-native-navigation) and [react-native-router-flux](https://github.com/aksonov/react-native-router-flux). Two great solutions that I encourage you to take a look at.
