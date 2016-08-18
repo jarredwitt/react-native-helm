@@ -4,10 +4,10 @@
  * @flow
  */
 
-import Root from './examples/custom';
-
 import {
-  AppRegistry,
+ AppRegistry,
 } from 'react-native';
+
+import Root from './examples/custom';
 
 AppRegistry.registerComponent('ReactNativeHelm', () => Root);

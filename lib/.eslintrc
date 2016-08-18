@@ -4,7 +4,10 @@
       "classes": true,
       "jsx": true
   },
-  "extends": "eslint-config-airbnb",
+  "env": {
+    "node": true,
+    "es6": true
+  },
   "rules": {
     "prefer-const": 0,
     "no-empty-label": 0,
