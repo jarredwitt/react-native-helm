@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 
-import { Navigation, Router, Scene } from '../../lib';
+import { Navigation, Router, Scene, Schema } from '../../lib';
 
 import Home from './home';
 import Page from './page';
 
 const navigation = (
   <Navigation>
-    <Scene root key="home" component={Home} />
-    <Scene key="page" component={Page} />
+    <Schema key="default" headerTitleStyle={{ color: 'blue' }} />
+    <Scene root key="home" schema="default" component={Home} />
+    <Scene key="page" schema="default" component={Page} />
   </Navigation>
 );
 
