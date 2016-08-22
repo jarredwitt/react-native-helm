@@ -2,7 +2,7 @@
   "name": "ReactNativeHelm",
   "author": "Jarred Witt",
   "description": "React Native router that uses NavigationExperimental.",
-  "version": "0.0.1",
+  "version": "1.0.0-beta.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
