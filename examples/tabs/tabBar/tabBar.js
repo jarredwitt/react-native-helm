@@ -16,9 +16,17 @@ class TabBar extends Component {
 
   _handleTabSelect = (key) => this.props.navigation.switch(key);
   render() {
+    const tabs = [{
+      key: 'home',
+      title: 'Home',
+    }, {
+      key: 'page',
+      title: 'Page',
+    }];
+
     return (
       <View style={styles.tabBar}>
-        {this.props.tabs.map((child, index) => {
+        {tabs.map((child, index) => {
           let onSelect = () => this._handleTabSelect(child.key);
           return (
             <TouchableOpacity key={index} style={styles.tab} onPress={onSelect}>
