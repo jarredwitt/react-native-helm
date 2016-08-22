@@ -2,16 +2,18 @@
   "name": "react-native-helm",
   "author": "Jarred Witt",
   "description": "React Native router that uses NavigationExperimental.",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "lint": "eslint .",
     "validate": "npm ls"
   },
+  "peerDependencies": {
+    "react": "^15.2.1",
+    "react-native": "^0.31.0"
+  },
   "dependencies": {
     "immutable": "^3.8.1",
-    "react": "^15.2.1",
-    "react-native": "^0.31.0",
     "react-native-animatable": "^0.6.1"
   },
   "devDependencies": {
