@@ -18,7 +18,7 @@ const tabComponent = <TabBar tabs={tabs} />;
 const navigation = (
   <Navigation tabComponent={tabComponent}>
     <Scene root key="home" component={Home} />
-    <Scene root key="page" component={Page} />
+    <Scene root key="page" component={Page} headerContainerStyle={{ backgroundColor: 'pink' }} />
   </Navigation>
 );
 
