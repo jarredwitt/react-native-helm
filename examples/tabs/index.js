@@ -23,9 +23,12 @@ const navigation = (
 );
 
 class Root extends Component {
+  _navEvent = (e) => {
+    console.log(e);
+  }
   render() {
     return (
-      <Router navigation={navigation} />
+      <Router onNavigate={this._navEvent} navigation={navigation} />
     );
   }
 }
