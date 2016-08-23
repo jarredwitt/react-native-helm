@@ -11,7 +11,7 @@
     "react native router",
     "navigation experimental router"
   ],
-  "version": "1.0.0-beta.4",
+  "version": "1.0.0-beta.5",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "lint": "eslint .",

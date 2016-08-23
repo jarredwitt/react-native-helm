@@ -9,11 +9,11 @@ class Page extends Component {
 
   static navigationProps = {
     title: 'Page',
-    leftButtons: [(navigation) => (
+    renderBackButton: (navigation, prevProps) => (
       <TouchableOpacity onPress={() => navigation.pop()}>
-        <Text>Home</Text>
+        <Text>{`Back ${prevProps.title}`}</Text>
       </TouchableOpacity>
-    )],
+    ),
   };
 
   _pop = () => this.props.navigation.pop();
