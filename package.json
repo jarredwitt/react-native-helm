@@ -2,12 +2,22 @@
   "name": "react-native-helm",
   "author": "Jarred Witt",
   "description": "React Native router that uses NavigationExperimental.",
-  "version": "1.0.0-beta.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jarredwitt/react-native-helm"
+  },
+  "keywords": [
+    "react native",
+    "react native router",
+    "navigation experimental router"
+  ],
+  "version": "1.0.0-beta.4",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "lint": "eslint .",
     "validate": "npm ls"
   },
+  "main": "/lib/",
   "peerDependencies": {
     "react": "^15.2.1",
     "react-native": "^0.31.0"
@@ -35,5 +45,6 @@
   },
   "pre-commit": [
     "lint"
-  ]
+  ],
+  "license":"MIT"
 }
