@@ -8,6 +8,6 @@ import {
  AppRegistry,
 } from 'react-native';
 
-import Root from './examples/custom';
+import Root from './examples/drawer';
 
 AppRegistry.registerComponent('ReactNativeHelm', () => Root);

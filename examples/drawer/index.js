@@ -4,12 +4,17 @@ import { Navigation, Router, Scene } from '../../lib';
 
 import Home from './home';
 import Page from './page';
-import DrawerMenu from './drawerMenu/drawerMenu';
+import DrawerPage from './drawerPage';
+import drawerMenu from './drawerMenu/drawerMenu';
+
+const LeftDrawerMenu = drawerMenu('left');
+const RightDrawerMenu = drawerMenu('right');
 
 const navigation = (
-  <Navigation leftDrawerComponent={DrawerMenu} rightDrawerComponent={DrawerMenu}>
+  <Navigation leftDrawerComponent={LeftDrawerMenu} rightDrawerComponent={RightDrawerMenu}>
     <Scene root key="home" component={Home} />
     <Scene root key="page" component={Page} />
+    <Scene root key="drawerPage" component={DrawerPage} />
   </Navigation>
 );
 

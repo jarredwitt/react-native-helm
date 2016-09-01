@@ -7,21 +7,31 @@ import {
 
 import styles from './drawerMenu.style';
 
-class DrawerMenu extends Component {
+const DrawerMenu = (side) => class extends Component {
   static propTypes = {
     activeRoot: PropTypes.string,
     navigation: PropTypes.object,
   };
 
   render() {
+    let pushMethod;
+    if (side === 'left') {
+      pushMethod = () => this.props.navigation.leftDrawerPush('drawerPage', { hideNavBar: true });
+    } else {
+      pushMethod = () => this.props.navigation.rightDrawerPush('drawerPage');
+    }
+
     return (
       <View style={styles.mainView}>
         <TouchableOpacity onPress={() => this.props.navigation.switch('page')} style={styles.menuItem}>
           <Text style={styles.menuItemText}>Page</Text>
         </TouchableOpacity>
+        <TouchableOpacity onPress={pushMethod} style={styles.menuItem}>
+          <Text style={styles.menuItemText}>Push Page</Text>
+        </TouchableOpacity>
       </View>
     );
   }
-}
+};
 
 export default DrawerMenu;
