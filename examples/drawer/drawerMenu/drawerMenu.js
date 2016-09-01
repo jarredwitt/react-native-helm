@@ -23,7 +23,7 @@ const DrawerMenu = (side) => class extends Component {
 
     return (
       <View style={styles.mainView}>
-        <TouchableOpacity onPress={() => this.props.navigation.switch('page')} style={styles.menuItem}>
+        <TouchableOpacity onPress={() => this.props.navigation.switch('page', { leftDrawerVisible: false })} style={styles.menuItem}>
           <Text style={styles.menuItemText}>Page</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={pushMethod} style={styles.menuItem}>
