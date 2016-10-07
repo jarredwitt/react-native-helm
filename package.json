@@ -11,7 +11,7 @@
     "react native router",
     "navigation experimental router"
   ],
-  "version": "1.0.0-beta.15",
+  "version": "1.0.0-beta.20",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "lint": "eslint .",
@@ -19,8 +19,8 @@
   },
   "main": "/lib/",
   "peerDependencies": {
-    "react": "^15.2.1",
-    "react-native": "^0.31.0"
+    "react": "^15.3.1",
+    "react-native": "^0.34.0"
   },
   "dependencies": {
     "immutable": "^3.8.1",
