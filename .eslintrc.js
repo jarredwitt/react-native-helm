@@ -22,6 +22,7 @@ module.exports = {
       "no-alert": 0,
       "react/jsx-filename-extension": 0,
       "react/prefer-stateless-function": 0,
+      "no-use-before-define": 0
     },
     "presets": [
       "react-native"
